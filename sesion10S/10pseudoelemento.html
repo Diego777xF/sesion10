@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+   
+        .texto-marcado::before {/*antes*/
+            content: "→";
+            color:red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .texto-importante::after {
+            content: "=== IMPORTANTE ===";
+            color:blue;
+        }
+        .cita::before {
+            content: open-quote;
+            font-size: 50px;
+            color:green;
+
+        }
+        .cita::after {
+            content: close-quote;
+            font-size: 50px;
+            color:yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="texto-importante">Debemos considerar: </p>
+    <p class="texto-marcado">Uso de etiquetas semánticas</p>
+    <p class="cita">El buen código es su mejor documentación</p>
+
+</body>
+</html>

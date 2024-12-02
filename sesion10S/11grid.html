@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid; 
+            grid-template-areas: "sup sup sup"
+                                "izq cen der"
+                                "inf inf inf";
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+        }
+        .grid-container div {
+            border: 1px solid black;
+        }
+        /*Posicionamiento por areas*/
+
+        .header{
+            background-color: lightskyblue;
+            grid-area:sup;
+        }
+        .aside{
+            background-color: palegoldenrod;
+            grid-area:izq;
+        }
+        .article{
+            grid-area:cen;
+            background-color:whitesmoke;
+        }
+        .article2{
+            grid-area: der;
+            background-color: azure;
+        }
+        .footer{
+            background-color: peachpuff;
+            grid-area:inf;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="grid-container">
+            <div class="header">
+                <h1>Página de Noticias</h1>
+            </div>
+            <div class="aside">
+                <h2>Opciones</h2>
+                <ul>
+                    <li>Opción 1</li>
+                    <li>Opción 2</li>
+                    <li>Opción 3</li>
+                </ul>
+            </div>
+            <div class="article">
+                <h2>Noticia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et dolore deserunt!</p>        
+            </div>
+            <div class="article2">
+                <h2>Noticia 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odio dolores debitis dolorum repellat officiis optio .</p>
+            </div>
+            <div class="footer">Contacto: info@dominio.com</div>
+    </div>
+</body>
+</html>
